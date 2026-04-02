@@ -460,6 +460,34 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:44px 7%;
   </div>
 </section>
 <div class="dvdr"></div>
+<section id="certs" style="padding-top: 0;">
+  <div class="sec-hd rv">
+    <div class="stag">06 · Professional Certifications</div>
+    <h2 class="stitle">Verified <span>Achievements</span></h2>
+    <div class="sline"></div>
+  </div>
+
+  <div class="eduw" style="max-width: 600px;">
+    <div class="educ rv" style="border: 1px solid var(--border2); background: var(--card2); text-align: center; padding: 40px 30px;">
+      <div class="sko c1" style="margin: 0 auto 20px; width: 60px; height: 60px; font-size: 1.8rem;">🐍</div>
+      <div class="eduy" style="color: var(--gold);">ISSUED 2025</div>
+      <div class="edudg" style="font-size: 1.4rem; margin-bottom: 10px;">Python For DevOps Masterclass</div>
+      <div class="eduin" style="letter-spacing: 1px;">TrainWithShubham · Verified Completion</div>
+      <p class="edudt" style="margin: 20px 0;">Mastered Python automation, Boto3 for AWS, and system monitoring scripts. This certification validates my ability to build production-grade automation tools.</p>
+      
+      <button class="bp" onclick="showCert()" style="cursor: pointer; border: none; font-size: 0.75rem; padding: 12px 25px;">
+        <i class="fas fa-certificate"></i> VIEW CERTIFICATE
+      </button>
+    </div>
+  </div>
+</section>
+
+<div id="certModal" onclick="hideCert()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(2,11,24,0.96); z-index:10000; justify-content:center; align-items:center; backdrop-filter:blur(15px); cursor: zoom-out;">
+  <div style="position:relative; max-width:90%; max-height:85%; animation: fu 0.4s ease-out;">
+    <span style="position:absolute; top:-45px; right:0; color:var(--cyan); font-family:'Orbitron'; font-size:0.8rem; letter-spacing:2px;">CLICK ANYWHERE TO CLOSE</span>
+    <img src="cert.jpg" style="width:100%; border-radius:10px; border:1px solid var(--border2); box-shadow: 0 0 60px rgba(0,200,248,0.2);">
+  </div>
+</div>
 
 <!-- CONTACT -->
 <section id="contact" style="background:var(--bg2);">
@@ -534,6 +562,15 @@ document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
 document.getElementById('cForm').addEventListener('submit',function(e){e.preventDefault();const s=document.getElementById('fok');s.style.display='block';this.reset();setTimeout(()=>s.style.display='none',6000);});
 // NAV
 window.addEventListener('scroll',()=>{document.getElementById('nav').style.background=scrollY>60?'rgba(2,11,24,.97)':'rgba(2,11,24,.8)';});
+function showCert() {
+  document.getElementById('certModal').style.display = 'flex';
+  document.body.style.overflow = 'hidden'; // Scroll rokne ke liye
+}
+
+function hideCert() {
+  document.getElementById('certModal').style.display = 'none';
+  document.body.style.overflow = 'auto'; // Scroll wapas on karne ke liye
+}
 </script>
 </body>
 </html>
