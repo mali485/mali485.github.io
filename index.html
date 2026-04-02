@@ -573,13 +573,13 @@ function hideCert() {
 }
 </script>
 </script>
-<div id="certModal" onclick="hideCert()" style="display:none; position:fixed; top:0; left:0; width:100% !important; height:100% !important; background:rgba(2,11,24,0.98) !important; z-index:99999 !important; justify-content:center; align-items:center; backdrop-filter:blur(15px); cursor: zoom-out; padding: 15px;">
+<div id="certModal" onclick="hideCert()" style="display:none; position:fixed; top:0; left:0; width:100vw !important; height:100vh !important; background:rgba(2,11,24,0.98) !important; z-index:100000 !important; justify-content:center; align-items:center; backdrop-filter:blur(15px); cursor: zoom-out; padding: 0 !important;">
   
-  <div style="position:relative; width: 100% !important; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <div style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
     
-    <span style="color:var(--cyan); font-family:'Orbitron'; font-size:0.6rem; letter-spacing:2px; margin-bottom: 12px; text-shadow: 0 0 10px var(--cyan);">CLICK ANYWHERE TO CLOSE</span>
+    <span style="color:var(--cyan); font-family:'Orbitron'; font-size:12px; letter-spacing:2px; margin-bottom: 20px;">CLICK ANYWHERE TO CLOSE</span>
     
-    <img src="cert.jpg" style="width: 400px !important; max-width: 60% !important; height: auto !important; max-height: 50vh !important; border-radius:10px; border:1px solid rgba(0,240,255,0.3); box-shadow: 0 0 50px rgba(0,0,0,0.8); object-fit: contain !important;">
+    <img src="cert.jpg?v=2" style="width: 40vw !important; min-width: 300px !important; max-width: 600px !important; height: auto !important; max-height: 75vh !important; border-radius:12px; border:2px solid rgba(0,240,255,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.9); object-fit: contain !important;">
     
   </div>
 </div>
